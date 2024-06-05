@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="login_page_US.php" method="post">
+                <h2 style="text-align: center;">Accès Utilisateur</h2>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>connexion par Email</span>
+                <input type="email" name='email' placeholder="Email" style="color: white;">
+                <input type="password" name='password' placeholder="Password" style="color: white;">
+                <input type="hidden" id="userType" name="userType" value="Utilisateur">
+                <a href="signup.html">Créer un compte</a>
+                <input type="submit" name="submit_us" value="Se connecter" style="color: white;">
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="login_page_OR.php" method="post">
+                <h2 style="justify-content: center;">Accès Organisation</h2>
+                <div class="social-icons">
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-google-plus-g"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <span>connexion par Email</span>
+                <input type="email" name='email' placeholder="Email" style="color: white;">
+                <input type="text" name='numero_er' placeholder="Numéro d'enregistrement" style="color: white;">
+                <input type="password"  name='password' placeholder="Password" style="color: white;">
+                <input type="hidden" id="userType" name="userType" value="Organisation">
+                <a href="signup.html">Créer un compte</a>
+                <input type="submit" name="submit_or" value="Se connecter" style="color: white;">
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bienvenue <br> Utilisateur !</h1>
+                    <p>Nous vous invitons à rejoindre notre mission et à faire un don. Votre soutien est essentiel pour continuer notre travail et atteindre nos objectifs.</p>
+                    <button class="hidden" id="login">Je suis une Organisation</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bienvenue Organisation !</h1>
+                    <p>Nous vous invitons chaleureusement à vous joindre à notre cause. Votre contribution, quelle qu'elle soit, sera un pas de plus vers un monde plus juste et solidaire!</p>
+                    <button class="hidden" id="register">Je suis un Utilisateur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="LoginScript.js"></script>
+</body>
+</html>

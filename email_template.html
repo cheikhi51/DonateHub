@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Donation Confirmation</h2>
+        </div>
+        <div class="content">
+            <p>Thank you for your donation. Here are the details:</p>
+            <p><strong>Amount:</strong> {{montant}}</p>
+            <p><strong>Date:</strong> {{date}}</p>
+            <p><strong>Campaign ID:</strong> {{id_campagne}}</p>
+            <p><strong>Payment Mode:</strong> {{mode_de_paiement}}</p>
+            <p><strong>Status:</strong> {{status}}</p>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 DonateHub. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
