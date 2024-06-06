@@ -77,7 +77,7 @@ if (isset($_POST["add_don"])) {
                     $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
                     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
                     $mail->Username   = 'hamadacheikhi20@gmail.com';            // SMTP username
-                    $mail->Password   = 'gqce vzdz cors eway';                  // SMTP password
+                    $mail->Password   = '';                  // SMTP password
                     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption
                     $mail->Port       = 587;                                    // TCP port to connect to
 
